@@ -8,9 +8,9 @@ const Header = (props)=>{
   <header className='header'>
     <h1 >{props.name}</h1>
     <ul className='menu'>
-      <li>About</li>
-      <li>Buy</li>
-      <li>Contact</li>
+      <li>{props.links[0]}</li>
+      <li>{props.links[1]}</li>
+      <li>{props.links[2]}</li>
     </ul>
 </header>  );
 }
