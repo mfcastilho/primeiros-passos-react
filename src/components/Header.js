@@ -1,4 +1,5 @@
 import React from "react";
+import Menu from "./Menu";
 import "../App.css";
 
 
@@ -7,12 +8,11 @@ const Header = (props)=>{
   return ( 
   <header className='header'>
     <h1 >{props.name}</h1>
-    <ul className='menu'>
-      <li>{props.links[0]}</li>
-      <li>{props.links[1]}</li>
-      <li>{props.links[2]}</li>
-    </ul>
+    <Menu links={props.links}></Menu>
 </header>  );
 }
+
+
+
 
 export default Header;
